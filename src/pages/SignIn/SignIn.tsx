@@ -1,12 +1,17 @@
 import {Container, Title} from './style';
 
+import {Input, Button} from '../../components';
+
 export const SignIn = () => {
   return (
     <Container>
-      <Title>Deck of Cards</Title>
-      <label>Informe seu nome</label>
-      <input />
-      <button>Entrar</button>
+      <div style={{width: '30%'}}>
+        <Title>Deck of Cards</Title>
+        <div style={{margin: '2.5rem'}} />
+        <Input />
+        <div style={{margin: '1rem'}} />
+        <Button />
+      </div>
     </Container>
   );
 };

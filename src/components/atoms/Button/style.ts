@@ -7,4 +7,5 @@ export const Container = styled.button`
   width: 100%;
   background-color: #fff;
   color: ${COLORS.dark_green};
+  border: none;
 `;

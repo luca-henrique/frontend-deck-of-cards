@@ -1,5 +1,8 @@
+import {ButtonHTMLAttributes} from 'react';
 import {Container} from './style';
 
-export const Button = () => {
-  return <Container>Entrar</Container>;
+interface IButton extends ButtonHTMLAttributes<any> {}
+
+export const Button = ({onClick}: IButton) => {
+  return <Container onClick={onClick}>Entrar</Container>;
 };

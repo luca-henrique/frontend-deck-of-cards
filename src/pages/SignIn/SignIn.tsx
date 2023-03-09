@@ -17,7 +17,7 @@ export const SignIn = () => {
         <div style={{margin: '2.5rem'}} />
         <Input />
         <div style={{margin: '1rem'}} />
-        <Button onClick={() => addName()} />
+        <Button onClick={() => addName()}>ver cartas</Button>
       </div>
     </Container>
   );

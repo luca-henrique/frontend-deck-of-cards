@@ -20,3 +20,10 @@
 - As cartas nunca são descartadas, caso ele puxe 3 novas cartas ele estará visualizando 8 cartas.
 - O segundo botão permite a ele embaralhar a ordem das cartas que está visualizando.
   Critérios de avaliação:
+
+## Iniciar projeto
+
+- npm i [instalando-dependnecias]
+- npm run dev [iniciando-modo-dev]
+- abra o navegador [abrir-navegador]
+- digite o ip [http://localhost:5173/]

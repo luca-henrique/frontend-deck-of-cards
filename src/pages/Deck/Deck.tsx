@@ -72,7 +72,6 @@ export const Deck = () => {
             flexDirection: 'column',
           }}
         >
-          <Title>Deck</Title>
           <Title>
             {limitAddCard}/{LIMIT_ADD_CARD}
           </Title>
@@ -83,7 +82,6 @@ export const Deck = () => {
             flexDirection: 'column',
           }}
         >
-          <Title>Nome</Title>
           <Title>{value}</Title>
         </div>
       </div>
@@ -93,6 +91,7 @@ export const Deck = () => {
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'center',
+          gap: '10px',
         }}
       >
         {deck.map((item: any) => {
@@ -102,13 +101,22 @@ export const Deck = () => {
       <div
         style={{
           display: 'flex',
-          flexDirection: 'row',
           justifyContent: 'center',
-          width: '60%',
         }}
       >
-        <Button onClick={() => addNewCard()}>Pegar nova carta</Button>
-        <Button onClick={() => randomCards()}>Embaralhar cartas</Button>
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            width: '20%',
+            marginTop: '2%',
+            gap: '20px',
+          }}
+        >
+          <Button onClick={() => addNewCard()}>Pegar nova carta</Button>
+          <Button onClick={() => randomCards()}>Embaralhar cartas</Button>
+        </div>
       </div>
     </Container>
   );

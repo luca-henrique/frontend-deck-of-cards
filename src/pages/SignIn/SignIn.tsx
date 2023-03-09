@@ -1,9 +1,9 @@
-import {Container} from './style';
+import {Container, Title} from './style';
 
 export const SignIn = () => {
   return (
     <Container>
-      <h2>Deck of Cards</h2>
+      <Title>Deck of Cards</Title>
       <label>Informe seu nome</label>
       <input />
       <button>Entrar</button>

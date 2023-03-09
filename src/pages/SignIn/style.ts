@@ -10,4 +10,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  justify-content: center;
+`;
+
+export const Title = styled.h1`
+  font-size: 48px;
+  color: #fff;
 `;

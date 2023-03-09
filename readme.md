@@ -23,7 +23,8 @@
 
 ## Iniciar projeto
 
+- abra o terminal [terminal]
 - npm i [instalando-dependnecias]
 - npm run dev [iniciando-modo-dev]
 - abra o navegador [abrir-navegador]
-- digite o ip [http://localhost:5173/]
+- digite o cole o endereco http://localhost:5173/ no navegador [abrir-app]

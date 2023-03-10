@@ -19,6 +19,19 @@ function* getDeckInformation(): any {
 
     const deck = yield call(() => getDeck(data.deck_id));
 
+    let newDeck: any = [];
+
+    deck.data.cards.map((item, index) => {
+      newDeck.push({
+        name: `${item.suit}+${item.code}`,
+        image: item.image,
+        value: index,
+        description: `A carte é ${item.code} de ${item.suit}`,
+      });
+    });
+
+    deck.data.cards = newDeck;
+
     yield put(readDeckSuccess(deck.data));
   } catch (e) {
     console.log(e);

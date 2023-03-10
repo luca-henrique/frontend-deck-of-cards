@@ -1,6 +1,6 @@
 import {useAppSelector, useLocalStorage} from '../../../hooks/';
 
-import {Title} from './style';
+import {Title, Header, InformationContainer} from './style';
 
 export const HeaderDeck = () => {
   const {limit, quantity_cart_push} = useAppSelector((state) => state.deck);
@@ -8,31 +8,15 @@ export const HeaderDeck = () => {
   const [value] = useLocalStorage('name', '');
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-        }}
-      >
+    <Header>
+      <InformationContainer>
         <Title>
           {quantity_cart_push}/{limit}
         </Title>
-      </div>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-        }}
-      >
+      </InformationContainer>
+      <InformationContainer>
         <Title>{value}</Title>
-      </div>
-    </div>
+      </InformationContainer>
+    </Header>
   );
 };

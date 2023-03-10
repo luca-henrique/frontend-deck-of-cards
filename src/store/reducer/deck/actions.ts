@@ -1,10 +1,16 @@
-import { createAction } from "@reduxjs/toolkit";
+import {createAction} from '@reduxjs/toolkit';
 
-interface ISignIn {
-  email: string;
-  password: string;
-}
+import {Card, IDeck} from './types';
 
-export const signIn = createAction<ISignIn>("user/sign-in");
-export const addItem = createAction<string>("ADD_ITEM");
-export const removeItem = createAction<any>("REMOVE_ITEM");
+export const readDeckRequest = createAction('deck/read-deck-request');
+export const readDeckSuccess = createAction<IDeck>('deck/read-deck-success');
+
+export const getNewRandomCardRequest = createAction<{deck_id: string}>(
+  'deck/get-new-random-card-request',
+);
+
+export const getNewRandomCardSuccess = createAction<Card>(
+  'deck/get-new-random-card-success',
+);
+
+export const randomCards = createAction('deck/random-cards');

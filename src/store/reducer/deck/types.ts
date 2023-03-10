@@ -1,5 +1,17 @@
+export interface IDeck {
+  success: boolean;
+  deck_id: string;
+  cards: Array<Card>;
+  remaining: string;
+  loading: boolean;
 
-export type UserState = {
-  token: string;
-  lastSearchs:string[]
-};
+  limit: number;
+  quantity_cart_push: number;
+}
+
+export interface Card {
+  code: string;
+  image: [];
+  suit: string;
+  value: string;
+}

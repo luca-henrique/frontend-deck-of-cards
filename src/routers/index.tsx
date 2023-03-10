@@ -1,6 +1,8 @@
+import {Provider} from 'react-redux';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 import {SignIn, Deck} from '../pages';
+import {store} from '../store';
 
 const router = createBrowserRouter([
   {
@@ -14,5 +16,9 @@ const router = createBrowserRouter([
 ]);
 
 export const Routers = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
+  );
 };

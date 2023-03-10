@@ -114,7 +114,9 @@ export const Deck = () => {
             gap: '20px',
           }}
         >
-          <Button onClick={() => addNewCard()}>Pegar nova carta</Button>
+          <Button onClick={() => addNewCard()}>
+            Pegar nova carta {limitAddCard} / {LIMIT_ADD_CARD}
+          </Button>
           <Button onClick={() => randomCards()}>Embaralhar cartas</Button>
         </div>
       </div>

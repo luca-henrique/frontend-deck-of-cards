@@ -1,9 +1,9 @@
-import { createReducer } from "@reduxjs/toolkit";
-import { addItem, signIn, removeItem } from "./actions";
+import {createReducer} from '@reduxjs/toolkit';
+import {addItem, signIn, removeItem} from './actions';
 
-import { initialState } from "./initial";
+import {initialState} from './initial';
 
-export const userReducer = createReducer(initialState, (builder) => {
+export const deckReducer = createReducer(initialState, (builder) => {
   builder
     .addCase(signIn, (state, action) => {
       console.log(action);
@@ -13,7 +13,7 @@ export const userReducer = createReducer(initialState, (builder) => {
     })
     .addCase(removeItem, (state, action) => {
       state.lastSearchs = state.lastSearchs.filter(
-        (item) => item !== action.payload
+        (item) => item !== action.payload,
       );
     });
 });

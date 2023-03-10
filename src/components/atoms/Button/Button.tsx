@@ -3,6 +3,10 @@ import {Container} from './style';
 
 interface IButton extends ButtonHTMLAttributes<any> {}
 
-export const Button = ({onClick, children}: IButton) => {
-  return <Container onClick={onClick}>{children}</Container>;
+export const Button = ({onClick, children, type}: IButton) => {
+  return (
+    <Container onClick={onClick} type={type}>
+      {children}
+    </Container>
+  );
 };

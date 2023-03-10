@@ -8,7 +8,6 @@ export const Container = styled.div`
 
 export const InputContainer = styled.input`
   height: 48px;
-  width: 100%;
   border-radius: 6px;
   padding: 6px;
 `;

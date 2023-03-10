@@ -1,9 +1,15 @@
+import {InputHTMLAttributes} from 'react';
 import {Container, InputContainer, Label} from './style';
 
-export const Input = () => {
+interface IInput extends InputHTMLAttributes<any> {
+  label?: string;
+}
+
+export const Input = ({onChange, required, label}: IInput) => {
   return (
     <Container>
-      <InputContainer />
+      <Label>{label}</Label>
+      <InputContainer onChange={onChange} required={required} />
     </Container>
   );
 };

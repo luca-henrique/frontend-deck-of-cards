@@ -1,6 +1,6 @@
 import {useEffect} from 'react';
 import {useDispatch} from 'react-redux';
-import {useAppSelector} from '../../../hooks/useHookSagas';
+import {useAppSelector} from '../../../hooks';
 import {readDeckRequest} from '../../../store/reducer/deck/actions';
 
 export const ListCardsDeck = () => {

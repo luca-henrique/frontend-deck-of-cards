@@ -1,4 +1,4 @@
-import {useAppDispatch, useAppSelector} from '../../../hooks/useHookSagas';
+import {useAppDispatch, useAppSelector} from '../../../hooks';
 import {
   getNewRandomCardRequest,
   randomCards,

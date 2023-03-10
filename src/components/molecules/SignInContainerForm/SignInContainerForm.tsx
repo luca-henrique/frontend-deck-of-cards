@@ -1,4 +1,4 @@
-import {useHookFormSignIn} from '../../../hooks/useHookFormSignIn';
+import {useHookFormSignIn} from '../../../hooks';
 
 import {Form, Title} from './style';
 

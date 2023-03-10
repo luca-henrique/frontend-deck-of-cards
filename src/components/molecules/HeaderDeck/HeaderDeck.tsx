@@ -1,12 +1,9 @@
-import {useAppSelector} from '../../../hooks/useHookSagas';
-import {useLocalStorage} from '../../../hooks/useLocalStorage';
+import {useAppSelector, useLocalStorage} from '../../../hooks/';
 
 import {Title} from './style';
 
 export const HeaderDeck = () => {
-  const {cards, loading, deck_id, limit, quantity_cart_push} = useAppSelector(
-    (state) => state.deck,
-  );
+  const {limit, quantity_cart_push} = useAppSelector((state) => state.deck);
 
   const [value] = useLocalStorage('name', '');
 
